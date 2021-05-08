@@ -21,4 +21,7 @@ class Producto extends Model
     public function galeria(){
         return $this->hasMany(GaleriaProducto::class);
     }
+    public function event(){
+        return $this->hasMany(Event::class);
+    }
 }
